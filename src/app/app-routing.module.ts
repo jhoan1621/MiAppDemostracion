@@ -11,6 +11,9 @@ const routes: Routes = [
   {path:"tabla",
     loadChildren:()=>import("./tabla/tabla.module").then(m=>m.TablaModule)
   },
+  {path:"acerca-de",
+    loadChildren:()=>import("./acerca-de/acerca-de.module").then(m=>m.AcercaDeModule)
+  },
   {path:"",
     redirectTo:"/home",
     pathMatch:"full"
